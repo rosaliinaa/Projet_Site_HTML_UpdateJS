@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("Genshin\ Fond.png");
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(76, 79, 127);
+    color:rgb(205, 225, 238);
+}
+/* Applique un fond centré sur la page qui s'adapte à la taille du site. */
+
+@font-face {
+    font-family: 'HY-WenHei';
+    src: url("zhcn.ttf"); 
+}
+/* Importe une police d'écriture depuis l'ordinateur qui pourra être utilisée par la suite. */
+
+h1 {
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}  
+/* Applique une police d'écriture, une couleur et une ombre au texte "h1". */
+
+h2 {
+    font-family: 'HY-WenHei',sans-serif;
+    color:#42576e; 
+}
+/* Applique une police d'écriture et une couleur au texte "h2". */
+
+.button_connexion {
+    padding: 1px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #42576e;
+    border-color:  #42576e;
+    font-family: 'HY-WenHei',sans-serif;
+}
+/* Personnalise visuellement le bouton de connexion. */
+
+.header {
+    display: flex;
+}
+/* Aligne les blocs suivants sur la même ligne horizontale. */
+
+.bloc-1 {
+    width: 20%;
+    text-align: center;
+    margin-top: 15px;
+}
+/* Applique à l'image des paramètres de placements. */
+
+.bloc-2 {
+    width: 60%;
+    text-align: center;
+}
+/* Applique à la division des paramètres de placements. */
+
+.bloc-3 {
+    width: 20%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* Applique à la division des paramètres de placements. */
+
+.aside_titre {
+    text-align: center;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+    font-size:larger;
+}
+/* Applique au texte un paramètre de placement, une police d'écriture, une couleur, une ombre et une taille. */
+
+.button_light_dark_mode {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: #42576e;
+    border-color:  #42576e;
+    font-family: 'HY-WenHei',sans-serif;
+}
+
+/* Donne des paramètres visuels les boutons Dark Mode et Light Mode. */
+
+.page_titre {
+    text-align: justify;
+    margin-left: 40px;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+    font-size: larger;
+}
+/* Applique au texte des paramètres de placement, une police d'écriture, une couleur, une ombre et une taille. */
+
+.texte {
+    margin:15px;
+    padding: 0;
+    font-size: medium;
+    text-align:justify;
+}
+/* Applique au texte des paramètres de placement et une taille. */
+
+.liens_texte {
+    text-align: justify;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    font-size: medium;
+}
+/* Applique aux liens une couleur, une taille et une police. */
+
+.page1_corps {
+    display: flex;
+}
+/* Aligne les blocs suivants sur la même ligne horizontale. */
+
+.bloc-4 {
+    width: 20%;
+    text-align: justify;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+}
+/* Applique au texte des paramètres de placement, une police d'écriture et une couleur. */
+
+.center {
+    text-align: center;
+}
+/* Centre le texte séléctionné. */
+
+.bloc-5 {
+    width: 80%;
+    text-align: justify;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    padding:15px;
+}
+/* Applique au texte des paramètres de placement, une police d'écriture et une couleur. */
+
+.button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(205, 225, 238);
+    font-family: 'HY-WenHei',sans-serif;
+    padding-top: 7px; 
+    padding-right:10%;
+    padding-left:10%;
+    padding-bottom:7px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;  
+}
+/* Applique au bouton des paramètres de placement, une couleur du fond et du texte, une police d'écriture et une taille du texte. */
+
+.footer {
+    display: flex;
+}
+/* Aligne les blocs suivants sur la même ligne horizontale. */
+
+.bloc-6 {
+    width: 50%;
+    text-align:end;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    padding:15px;
+}
+/* Applique au texte des paramètres de placement, une police d'écriture et une couleur. */
+
+.bloc-7 {
+    width: 50%;
+    text-align:start;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    padding:15px;
+}
+/* Applique au texte des paramètres de placement, une police d'écriture et une couleur. */
+
+.footer_titre {
+    text-align: justify;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    text-shadow:2px 2px 2px rgb(0, 0, 0);
+    font-size: larger;
+}
+/* Applique au texte un paramètre de placement, une police d'écriture, une couleur, une ombre et une taille. */
+
+.page2_corps {
+    display: flex;
+}
+/* Aligne les blocs suivants sur la même ligne horizontale. */
+
+.bloc-8 {
+    width: 50%;
+    text-align: end;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    margin:auto;
+}
+/* Applique au texte des paramètres de placement, une police d'écriture et une couleur. */
+
+.bloc-9 {
+    width: 50%;
+    text-align: start;
+    padding: 15px;
+    padding-left:7%;
+}
+/* Applique à l'image des paramètres de placements. */
+
+.bloc-10 {
+    width: 50%;
+    text-align: end;
+    padding:15px;
+    padding-right:7%;
+}
+/* Applique à l'image des paramètres de placements. */
+
+.bloc-11 {
+    width: 50%;
+    text-align: start;
+    font-family: 'HY-WenHei',sans-serif;
+    color:rgb(205, 225, 238);
+    margin:auto;
+}
+/* Applique au texte des paramètres de placement, une police d'écriture et une couleur. */
+
+@media screen and (max-width:1200px) {
+    .bloc-1 {
+        width: 22%;
+    }
+    .bloc-2 {
+        width: 58%;
+    }
+    .bloc-3 {
+        width: 19%;
+    }
+    .bloc-4 {
+        width: 27%;
+    }
+    .bloc-5 {
+        width: 73%;
+    }
+    .bloc-6 {
+        width: 50%;
+    }
+    .bloc-7 {
+        width: 50%;
+    }
+    .bloc-8 {
+        width: 50%;
+    }
+    .bloc-9 {
+        width: 50%;
+    }
+    .bloc-10 {
+        width: 50%;
+    }
+    .bloc-11 {
+        width: 50%;
+    }
+}
+/*Configure le reponsive du site pour les tablettes.*/
+
+@media screen and (max-width:800px) {
+    .bloc-1 {
+        width: 22%;
+    }
+    .bloc-2 {
+        width: 58%;
+    }
+    .bloc-3 {
+        width: 19%;
+    }
+    .bloc-4 {
+        width: 39%;
+    }
+    .bloc-5 {
+        width: 61%;
+    }
+    .bloc-6 {
+        width: 50%;
+    }
+    .bloc-7 {
+        width: 50%;
+    }
+    .bloc-8 {
+        width: 42%;
+    }
+    .bloc-9 {
+        width: 58%;
+    }
+    .bloc-10 {
+        width: 50%;
+    }
+    .bloc-11 {
+        width: 43%;
+    }
+}
+/*Configure le reponsive du site pour les téléphones.*/
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/* Configure l'emplacement des boutons. */
+
+.tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+} 
+/* Configure l'apparence des boutons. */
+
+.tab:hover {
+    background-color: #e0e0e0;
+} 
+/* Change la couleur du fond du bouton lorsque l'utilisateur passe sa souris dessus. */
+
+.tab-active {
+    background-color: #779dc7;
+    color: white;
+    border-color:  #42576e;
+}
+/* Applique des changements visuels lorsque le bouton est sélectionné. */
+
+.content {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+}
+/* Cache le contenu du bloc lorsque celui-ci n'est pas sélectionné. */
+
+.content.active {
+    display: block;
+}   
+/* Affiche le contenu du bloc lorsque celui-ci est sélectionné. */
+
+.boutons_titre {
+    color:#42576e;
+}
+/* Ajoute une couleur au texte présent sur les boutons. */
+
+form{ 
+    border : 1px solid rgba(153,153,153,0.6);
+    background-color: white;
+}
+/* Applique une couleur de fond et une bordure au formulaire. */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px  solid #f1f1f1;
+    z-index: 9;
+    color:#42576e;
+    font-family: 'HY-WenHei',sans-serif;
+}
+/* Applique des paramètres visuels (couleurs, position, police...) au formulaire. */
+
+form>div {
+    margin : 30px 20px;
+}
+/* Applique des changements aux div contenues dans le form. */
+
+label {
+    display : block;
+    margin-bottom : 8px; 
+}
+/* Applique un paramètre de positionnement aux titres des champs à renseigner. */
+
+input {
+    height:20px;
+    width: 60%;
+}
+/* Configure l'apparence des espaces de saisies des champs. */
+
+button {
+    margin-left:20px;
+    margin-bottom:30px;
+    padding:16px 32px;
+    cursor:pointer;
+} 
+/* Indique le placement des boutons. */
+
+.success {
+    border:1px solid rgb(81, 150, 2);
+    background-color:rgba(113, 212, 0, 0.4);
+}
+/* Applique un fond vert lorsque le texte renseigné remplit les conditions demandées. */
+
+.error {
+    border:1px solid #960202;
+    background-color:rgba(212, 0, 0, 0.4);
+}
+/* Applique un fond rouge lorsque le texte renseigné ne remplit pas les conditions demandées. */
+

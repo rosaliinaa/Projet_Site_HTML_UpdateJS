@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Genshin Impact - Le jeu de cartes</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+
+    <body>
+        <header class="header"> 
+            <!-- Création d'une division contenant 3 blocs-->    
+            <div class="bloc-1">
+                <!-- Création d'une division contenant une image cliquable renvoyant vers un site extérieur --> 
+                <a href="https://genshin.hoyoverse.com">
+                    <img src="Genshin Logo.png" alt="Logo de Genshin Impact" width="150" height=auto>
+                </a>
+            </div> 
+            <div class="bloc-2">
+                <!-- Création d'une division contenant un titre--> 
+                <h1>Genshin Impact - Le jeu de cartes</h1>
+            </div>
+            <div class="bloc-3">
+                <!-- Création d'un bouton pour ouvrir le formulaire d'inscription au site-->
+                <button class="open-button button_connexion" onclick="openForm()"><h2>Connexion</h2></button>
+                <form action="" method="POST" enctype="multipart/form-data" class="form-popup" id="myForm">
+                    <div>
+                        <label for="pseudo">Pseudo</label>
+                        <input type="text" name="pseudo" id="pseudo">
+                    </div>
+            
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+            
+                    <div>
+                        <label for="password">Mot de passe</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+            
+                    <div>
+                        <label for="password">Entrez à nouveau le mot de passe</label>
+                        <input type="password" name="password2" id="password2">
+                    </div>
+            
+                    <button type="submit" class="button_light_dark_mode">S'inscrire</button>
+                    <button type="button" class="btn cancel button_light_dark_mode" onclick="closeForm()">Fermer</button>
+            
+                </form>
+            </div>
+        </header>
+
+        <section class="page1_corps">
+            <!-- Création d'une division contenant 2 blocs-->
+            <aside class="bloc-4">
+                <!-- Création d'une division contenant 4 blocs-->
+                <p class="aside_titre">Navigation sur la page :</p>
+                <!-- Affiche le titre de la division -->
+                <ol class="liens_texte">
+                    <!-- Liste permettant de naviguer à travers la page -->
+                    <li><a href="#Histoire" title="Histoire" class="liens_texte">Histoire</a></li>
+                    <li><a href="#Gameplay" title="Gameplay" class="liens_texte">Gameplay</a></li>
+                    <li><a href="#Carte" title="Carte" class="liens_texte">Carte</a></li>
+                    <li><a href="#Personnages" title="Personnages" class="liens_texte">Personnages</a></li>
+                    <li><a href="#Jeu_de_cartes" title="Jeu de cartes" class="liens_texte">Jeu de cartes</a></li>
+                </ol>
+                
+                <!-- Créer 2 boutons qui activent le Dark Mode et le Light Mode -->
+                <button type="button" id="dark_mode" class="button_light_dark_mode">Dark Mode</button>
+                <button type="button" id="light_mode" class="button_light_dark_mode">Light Mode</button>
+                
+                <div class="center">
+                    <!-- Création d'images cliquables renvoyant vers des sites extérieurs ainsi que de texte affichant de quoi il s'agit -->
+                    <a href="https://www.fnac.com/a17149712/Genshin-Impact-Genshin-Impact-artbook-officiel-VOL01-Collectif" title="Achetez votre Artbook Genshin Impact Officiel !">
+                        <img src="Album Genshin.png" alt="Artbook officiel" width="150" height="auto">
+                    </a>
+                    <p class="aside_titre">Artbook officiel de Genshin Impact - vol. 1</p>
+                    <a href="https://www.youtube.com/watch?v=O2ATH__rtQo" title="Trailer de Natlan, terre du feu et de la compétition">
+                        <img src="Trailer de Natlan.jpg" alt="Natlan, terre du feu et de la compétition - Trailer" width="300" height="auto">
+                    </a>
+                    <p class="aside_titre">Trailer de Natlan, terre du feu et de la compétition</p>
+                </div>
+                <div class="button">
+                    <!-- Création d'un bouton renvoyant vers la seconde page du site -->
+                    <a href="Liste_des_cartes.html" title="Liste des cartes">Page suivante</a>
+                </div>
+            </aside>
+
+            <article class="bloc-5">
+                <!-- Création d'une division contenant du texte -->
+                <p><span class="texte">Genshin Impact est un jeu vidéo en ligne de type "Gacha Open World" sorti le 28 Septembre 2020. Depuis sa sortie, le jeu connaît un succès mondial et celui-ci ne semble pas faiblir même après 4 ans. Développé par le studio HoYoverse, il s'impose désormais comme une référence dans le marché des jeux-vidéo gacha.</span>
+                    <br>
+                    <br><span id="Histoire" class="page_titre">→ Histoire</span>
+                    <br>
+                    <br><span class="texte">En arrivant dans le monde de Teyvat, des jumeaux venus d'un autre monde sont confrontés à une déesse inconnue. Durant la bataille, cette dernière réussit à les séparer ainsi qu'à sceller leurs pouvoirs. Le joueur incarne l'un des jumeaux, le voyageur, qui, à son réveil, fait la rencontre de Paimon, une mystérieuse fée souhaitant être sa guide. Ensemble, ils parcoureront les 7 nations de Teyvat dans l'espoir de retrouver la trace du jumeau disparu.</span>
+                    <br>
+                    <!-- Mise en place de tabs présentant 7 aspects de l'histoire du jeu -->
+                    <ul class="tabs">
+                        <li class="tab tab-content1 tab-active boutons_titre">Mondstadt</li>
+                        <li class="tab tab-content2 boutons_titre">Liyue</li>
+                        <li class="tab tab-content3 boutons_titre">Inazuma</li>
+                        <li class="tab tab-content4 boutons_titre">Sumeru</li>
+                        <li class="tab tab-content5 boutons_titre">Fontaine</li>
+                        <li class="tab tab-content6 boutons_titre">Natlan</li>
+                        <li class="tab tab-content7 boutons_titre">Snezhnaya</li>
+                    </ul>
+                    <!-- Texte contenu par les tabs -->
+                    <div class="content content1 active">
+                        <span class="texte">Mondstadt est la cité du vent, de la liberté et de la chanson. Il s'agit de la première région visitée par le joueur, où il doit protéger la ville d'un dragon menaçant.</span>
+                    </div>
+                    <div class="content content2">
+                        <span class="texte">Liyue est le port de la pierre et des contrats. À son arrivée, le voyageur est confronté à une crise majeure : le dieu de la nation a été retrouvé mort.</span>
+                    </div>
+                    <div class="content content3">
+                        <span class="texte">Inazuma est l'archipel de la foudre et de l'éternité. La déesse de ce territoire impose un strict confinement et confisque les pouvoirs des habitants. À son arrivée, le voyageur tente de la raisonner.</span>
+                    </div>
+                    <div class="content content4">
+                        <span class="texte">Sumeru est la nation de la sagesse et de la flore. À l'arrivée du voyageur, des individus malveillants tentent de prendre le contrôle de la ville en emprisonnant sa déesse dans une cage.</span>
+                    </div>
+                    <div class="content content5">
+                        <span class="texte">Fontaine est la nation de l'eau et de la justice. Le voyageur doit aider le peuple de Fontaine à contrecarrer une prophétie qui annonce que toute la ville sera bientôt engloutie sous les eaux.</span>
+                    </div>
+                    <div class="content content6">
+                        <span class="texte">Natlan est la nation de la guerre, du feu et de la compétition. Elle est corrompue par une force venue d'un autre monde, que le voyageur doit repousser.</span>
+                    </div>
+                    <div class="content content7">
+                        <span class="texte">Snezhnaya est le pays de la glace. Comme cette région n'est pas encore accessible, nous ne disposons pas encore d'informations à son sujet. Sa date de sortie est prévue pour l'été 2025.</span>
+                    </div>
+                    <br><span id="Gameplay" class="page_titre">→ Gameplay</span>
+                    <br>
+                    <br><span class="texte">Genshin Impact propose un gameplay dynamique basé sur un système de réactions élémentaires. En effet, chaque personnage jouable possède un œil divin (ou l'équivalent) qui lui donne accès à un des 7 pouvoirs élémentaires : Anemo (vent), Geo (roche), Electro (éléctricité), Dendro (plantes), Hydro (eau), Pyro (feu) et Cryo (glace). En combat, il est possible de combiner les capacités des personnages afin de faire des réactions élémentaires sur les ennemis ce qui leur inflige davantage de dégats. Il en existe de nombreuses telles que la Fonte (Pyro + Cryo) ou l'Electrocution (Hydro + Electro).</span>
+                    <br>
+                    <br><span id="Carte" class="page_titre">→ Carte</span>
+                    <br>
+                    <br><span class="texte">Teyvat est un continent où les 7 éléments convergent. Il est séparé en 7 nations, auxquelles sont associés un élément à chacune. Actuellement, les joueurs peuvent explorer jusqu'à 6 nations : les développeurs ont annoncé qu'ils sortiraient une nouvelle nation par an, ainsi la dernière est prévue pour l'été 2025. Le voyage du joueur commence à Mondstadt, cité du vent, de la liberté et de la chanson; puis il continue vers Liyue, port de pierres et des contrats, avant d'arriver à Inazuma, l'archipel de la foudre éternelle. Il se rend ensuite à Sumeru, nation de la sagesse et de la flore, avant d'arriver à Fontaine, cour de l'eau et de la justice. Actuellement, le voyageur est à Natlan, la terre du feu et de la compétition. Bientôt, il se rendra à Snezhnaya, la région de la glace.</span>
+                    <br>
+                    <br><span id="Personnages" class="page_titre">→ Personnages</span>
+                    <br>
+                    <br><span class="texte">Au cours de son voyage, le voyageur rencontre de nombreux personnages. Ceux-ci sont, pour la plupart, jouables, et peuvent donc rejoindre l'équipe du voyageur afin de se battre à ses côtés. Certains personnages sont donnés gratuitement au joueur, mais la plupart ne sont disponibles qu'en faisant des invocations sur des bannières limitées ou permanentes.</span>
+                    <br>
+                    <br><span id="Jeu_de_cartes" class="page_titre">→ Jeu de cartes</span>
+                    <br>
+                    <br><span class="texte">Lors de la mise à jour 3.3 parue en Novembre 2023, un jeu de cartes fut ajouté au jeu. Le but du jeu est de battre l'équipe adverse en renforçant les attaques de sa propre équipe, en appliquant des malus à l'adversaire, en effectuant des réactions élémentaires sur l'ennemi... mais il faut faire attention à bien choisir ses actions car celles-ci sont limitées ! Ce site propose un autre jeu de carte dont les différentes cartes sont disponibles sur la page suivante.</span>
+                </p>
+            </article>
+        </section>
+       
+        <footer class="footer">
+            <!-- Création d'une division contenant 2 blocs -->
+            <div class="bloc-6">
+                <!-- Création d'une division contenant du texte, des liens cliquables renvoyant vers des sites extérieur ainsi que des images -->
+                <p><span class="footer_titre">Réseaux sociaux officiels :</span></p>
+                <p><br><a href="https://www.instagram.com/genshinimpact/" title="Instagram" class="liens_texte">Instagram</a> <img src="Logo Instagram.png" alt="Logo d'Instagram" width="20" height=auto>
+                <br><a href="https://x.com/GenshinImpact?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" title="X" class="liens_texte">X</a> <img src="Logo X.png" alt="Logo de X" width="20" height=auto>
+                <br><a href="https://discord.com/invite/genshinimpact" title="Serveur discord" class="liens_texte">Discord</a> <img src="Logo Discord.png" alt="Logo de Discord" width="20" height=auto>
+                <br><a href="https://www.facebook.com/Genshinimpact/?locale=fr_FR" title="Facebook" class="liens_texte">Facebook</a> <img src="Logo Facebook.png" alt="Logo de Facebook" width="20" height=auto>
+                </p>
+            </div>
+            <div class="bloc-7">
+                <!-- Création d'une division contenant du texte et un lien cliquable renvoyant vers un site extérieur -->
+                <p><span class="footer_titre">Site officiel :</span></p>
+                <p><br><a href="https://genshin.hoyoverse.com" title="Commencez votre aventure !" class="liens_texte">Jouer à Genshin Impact !</a>
+                </p>
+            </div>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
